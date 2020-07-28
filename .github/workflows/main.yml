@@ -11,8 +11,8 @@ jobs:
     - uses: guilhem/rss-issues-action@0.1.0
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        feed: "https://www.openstreetmap.org/traces/rss"
+        feed: "https://www.openstreetmap.org/traces/tag/bus%20route/rss"
         prefix: "[Trace]"
         dry-run: "false"
-        lastTime: "26h"
+        lastTime: "13h"
         labels: "à qualifier"
