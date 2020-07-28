@@ -2,7 +2,7 @@ name: rss
 
 on:
   schedule:
-  - cron: '12 * * * *'
+  - cron: '0 */12 * * *'
 
 jobs:
   new-traces:
@@ -13,6 +13,6 @@ jobs:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         feed: "https://www.openstreetmap.org/traces/rss"
         prefix: "[Trace]"
-        dry-run: "true"
-        lastTime: "336h"
+        dry-run: "false"
+        lastTime: "26h"
         labels: "à qualifier"
